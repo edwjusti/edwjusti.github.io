@@ -1,0 +1,236 @@
+*, *::after, *::before {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #f1f1f1;
+}
+
+.main-card {
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  max-width: 45%;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.12);
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.main-card p {
+  margin: 20px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+
+.main-avatar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  background: rgb(186, 255, 186);
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  box-shadow: 4px 4px 20px 1px rgba(56, 252, 115, 0.2);
+  top: -50px;
+  left: 25px;
+}
+
+.main-avatar img {
+  height: 95px;
+  width: 95px;
+  position: relative;
+  left: -4px;
+  top: 4px;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 80%;
+  height: 35px;
+}
+
+.contact a {
+  display: block;
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 35px;
+  width: 35px;
+  padding: 0;
+  margin: 0;
+  border-radius: 35px;
+  transition: all 300ms ease-in-out;
+}
+
+.contact a:hover, .contact a:active {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.twitter {
+  background: url('images/twitter-logo.png');
+}
+
+.github {
+  background: url('images/github-logo.png');
+}
+
+.email {
+  background: url('images/email.png');
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.33;
+  letter-spacing: 0em;
+  padding: 10px 0;
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  padding-top: 20px;
+}
+
+.card {
+  display: block;
+  position: relative;
+  background: white;
+  border-radius: 8px;
+  max-width: 35%;
+  margin: 0 auto;
+  box-shadow: 0 4px 20px 0 rgba(0,0,0,0.12);
+  min-height: 200px;
+  min-width: 35%;
+  padding-left: 150px;
+  padding-right: 20px;
+}
+
+a.card {
+  text-decoration: none;
+  color: inherit;
+}
+
+.avatar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  height: 175px;
+  width: 175px;
+  border-radius: 6px;
+  top: 12px;
+  left: -40px;
+}
+
+.avatar img {
+  height: auto;
+  width: 150px;
+}
+
+.avatar-green {
+  background: rgb(186, 255, 186);
+  box-shadow: 4px 4px 20px 1px rgba(56, 252, 115, 0.3);
+}
+
+.avatar-indigo {
+  background: #acc0f7;
+  box-shadow: 4px 4px 20px rgba(112, 146, 241, 0.3);
+}
+
+.avatar-purple {
+  background: #f0a4d6;
+  box-shadow: 4px 4px 20px rgba(229, 53, 171, 0.4);
+}
+
+.avatar-purple img {
+  width: 130px !important;
+}
+
+.avatar-dark {
+  background: rgb(34, 36, 37);
+  box-shadow: 4px 4px 20px rgba(34, 36, 37, 0.3);
+}
+
+.avatar-blue {
+  background: #304fff;
+  box-shadow: 4px 4px 20px rgba(48, 79, 255, 0.4);
+}
+
+.card p {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+
+@media (max-width: 850px) {
+  .main-card {
+    max-width: 90%;
+  }
+
+  .card {
+    max-width: 80% !important;
+    min-height: 250px;
+    padding-left: 120px;
+  }
+
+  .avatar {
+    height: 130px;
+    width: 130px;
+    overflow: hidden;
+    max-height: 130px;
+    max-width: 130px;
+    top: 25%;
+    left: -25px;
+  }
+
+  .avatar img {
+    height: auto;
+    width: 100px;
+  }
+
+  .avatar-purple img {
+    width: 80px !important;
+  }
+
+  .card--large {
+    min-height: 360px;
+  }
+
+  .card--large .avatar {
+    top: 30%;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 850px) {
+  .card {
+    min-height: 200px;
+  }
+
+  .avatar {
+    top: 18%;
+  }
+
+  .card--large .avatar {
+    top: 18%;
+  }
+}
