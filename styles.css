@@ -234,3 +234,17 @@ a.card {
     top: 18%;
   }
 }
+
+.card-hidden {
+  transform: scale(0);
+  transform-origin: center;
+}
+
+.card-visible {
+  transform: scale(1);
+  transform-origin: center;
+}
+
+.card-transition {
+  transition: transform 0.8s ease-in-out;
+}

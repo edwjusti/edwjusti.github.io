@@ -86,5 +86,24 @@
       </p>
     </a>
   </main>
+  <script>
+    const IntersectionObserver = window.IntersectionObserver || (function Noop() {});
+    const cards = document.querySelectorAll('.card');
+    const io = new IntersectionObserver(entries => {
+      for (const entry of entries) {
+        if (entry.isIntersecting && !entry.target.classList.contains('card-visible'))
+          entry.target.classList.add('card-visible');
+      }
+    });
+
+    for (const card of cards) {
+      card.classList.add('card-hidden');
+      card.classList.add('card-transition');
+
+      if ('IntersectionObserver' in window) {
+        io.observe(card);
+      }
+    }
+  </script>
 </body>
 </html>
