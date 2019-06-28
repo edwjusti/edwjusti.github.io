@@ -91,16 +91,14 @@
     const cards = document.querySelectorAll('.card');
     const io = new IntersectionObserver(entries => {
       for (const entry of entries) {
-        if (entry.isIntersecting && !entry.target.classList.contains('card-visible'))
-          entry.target.classList.add('card-visible');
+        if (entry.isIntersecting && entry.target.classList.contains('card-hidden'))
+          entry.target.classList.remove('card-hidden');
       }
     });
 
     for (const card of cards) {
-      card.classList.add('card-hidden');
-      card.classList.add('card-transition');
-
       if ('IntersectionObserver' in window) {
+        card.classList.add('card-hidden');
         io.observe(card);
       }
     }
