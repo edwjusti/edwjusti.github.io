@@ -155,6 +155,11 @@ a.card {
   box-shadow: 4px 4px 20px 1px rgba(56, 252, 115, 0.3);
 }
 
+.avatar-lime {
+  background: #0f0;
+  box-shadow: 4px 4px 20px 1px rgba(0, 255, 0, 0.5);
+}
+
 .avatar-indigo {
   background: #acc0f7;
   box-shadow: 4px 4px 20px rgba(112, 146, 241, 0.3);
