@@ -92,6 +92,10 @@ body {
   background: url('images/email.png');
 }
 
+.linkedin {
+  background: url('images/linkedin-logo.png');
+}
+
 h1 {
   text-align: center;
   font-size: 1.5rem;
